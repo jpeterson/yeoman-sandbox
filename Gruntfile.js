@@ -205,6 +205,7 @@ module.exports = function (grunt) {
                         jquery: '../bower_components/jquery/jquery',
                         underscore: '../bower_components/underscore-amd/underscore',
                         backbone: '../bower_components/backbone-amd/backbone',
+                        text: '../bower_components/text/text',
                         bootstrap: 'vendor/bootstrap',
                         dojo: '../bower_components/dojo',
                         dijit: '../bower_components/dijit',
