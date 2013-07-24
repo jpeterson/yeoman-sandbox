@@ -1,7 +1,6 @@
 {
     "node": true,
     "browser": true,
-    "esnext": true,
     "bitwise": true,
     "camelcase": true,
     "curly": true,
@@ -13,7 +12,6 @@
     "quotmark": "single",
     "regexp": true,
     "undef": true,
-    "strict": true,
     "trailing": true,
     "smarttabs": true,
     "jquery": true
