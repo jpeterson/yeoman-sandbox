@@ -4,10 +4,11 @@ define([
 		'app/views/LayoutView',
 		'esri/config',
 		'esri/map',
-		'esri/tasks/GeometryService'
+		'esri/tasks/GeometryService',
+		'jquery'
 ],
 
-function(config, LayoutView, esriConfig, Map, GeometryService) {
+function(config, LayoutView, esriConfig, Map, GeometryService, $) {
 	return {
 		startup: function() {
 			this.initConfig();
@@ -23,7 +24,9 @@ function(config, LayoutView, esriConfig, Map, GeometryService) {
 		},
 
 		initLayout: function() {
-			new LayoutView();
+			new LayoutView({
+				el: $('.container')
+			});
 		}
 	};
 

@@ -1,9 +1,9 @@
-/* global define, Backbone, $, _ */
+/* global define */
 define([
-		'text!./templates/LayoutViewTemplate.html'
+		'text!./templates/LayoutViewTemplate.html', 'backbone', 'underscore', 'jquery'
 ],
 
-function(viewTemplate) {
+function(viewTemplate, Backbone, _, $) {
 	var LayoutView = Backbone.View.extend({
 
 		initialize: function() {
@@ -11,7 +11,7 @@ function(viewTemplate) {
 		},
 
 		render: function() {
-			var template = _.template(viewTemplate);
+			var template = _.template(viewTemplate)();
 			this.$el.html(template);
 			return this;
 		}
