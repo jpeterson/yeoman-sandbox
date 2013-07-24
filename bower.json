@@ -4,6 +4,7 @@
   "dependencies": {
     "sass-bootstrap": "~2.3.0",
     "requirejs": "~2.1.4",
+    "text": "~2",
     "modernizr": "~2.6.2",
     "jquery": "~1.9.1",
     "backbone-amd": "~1.0.0",

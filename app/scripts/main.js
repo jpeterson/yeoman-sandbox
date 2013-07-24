@@ -23,6 +23,7 @@ require.config({
         underscore: 'underscore-amd/underscore',
         backbone: 'backbone-amd/backbone',
         bootstrap: '../scripts/vendor/bootstrap',
+        text: 'text/text',
         /* THESE are implied given the baseUrl
         dojo: 'dojo',
         dijit: 'dijit',
