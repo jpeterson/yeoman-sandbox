@@ -200,7 +200,19 @@ module.exports = function (grunt) {
                     // http://requirejs.org/docs/errors.html#sourcemapcomments
                     preserveLicenseComments: false,
                     useStrict: true,
-                    wrap: true
+                    wrap: true,
+                    paths: {
+                        jquery: '../bower_components/jquery/jquery',
+                        underscore: '../bower_components/underscore-amd/underscore',
+                        backbone: '../bower_components/backbone-amd/backbone',
+                        bootstrap: 'vendor/bootstrap',
+                        dojo: '../bower_components/dojo',
+                        dijit: '../bower_components/dijit',
+                        dojox: '../bower_components/dojox',
+                        dgrid: '../bower_components/dgrid',
+                        xstyle: '../bower_components/xstyle',
+                        'put-selector': '../bower_components/put-selector'
+                    }
                     //uglify2: {} // https://github.com/mishoo/UglifyJS2
                 }
             }

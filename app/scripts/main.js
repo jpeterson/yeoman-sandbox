@@ -1,7 +1,7 @@
 /*global require*/
 
 require.config({
-    baseUrl: '.',
+    baseUrl: 'bower_components',
     shim: {
         underscore: {
             exports: '_'
@@ -19,25 +19,22 @@ require.config({
         }
     },
     paths: {
-        jquery: '../bower_components/jquery/jquery',
-        underscore: '../bower_components/underscore-amd/underscore',
-        backbone: '../bower_components/backbone-amd/backbone',
-        bootstrap: 'scripts/vendor/bootstrap',
-
-        dojo: '//js.arcgis.com/3.6amd/js/dojo/dojo',
-        dijit: '//js.arcgis.com/3.6amd/js/dojo/dijit',
-        dojox: '//js.arcgis.com/3.6amd/js/dojo/dojox',
-        esri: '//js.arcgis.com/3.6amd/js/esri'
-    },
-    packages: [
-        { name: 'app', location: 'scripts' },
-        { name: 'dojo', location: '//js.arcgis.com/3.6amd/js/dojo/dojo' },
-        { name: 'dijit', location: '//js.arcgis.com/3.6amd/js/dojo/dijit' },
-        { name: 'dojox', location: '//js.arcgis.com/3.6amd/js/dojo/dojox' },
-        { name: 'esri', location: '//js.arcgis.com/3.6amd/js/esri' }
-    ]
+        jquery: 'jquery/jquery',
+        underscore: 'underscore-amd/underscore',
+        backbone: 'backbone-amd/backbone',
+        bootstrap: '../scripts/vendor/bootstrap',
+        /* THESE are implied given the baseUrl
+        dojo: 'dojo',
+        dijit: 'dijit',
+        dojox: 'dojox',
+        dgrid: 'dgrid',
+        xstyle: 'xstyle',
+        'put-selector': 'put-selector',
+        */
+        esri: '//js.arcgis.com/3.6amd/js/esri',
+        app: '../scripts'
+    }
 });
-
 require(['app/Controller', 'backbone', 'bootstrap'], function(Controller, Backbone) {
     'use strict';
     // use app here
