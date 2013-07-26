@@ -25,7 +25,7 @@ function(config, LayoutView, esriConfig, Map, GeometryService, $) {
 
 		initLayout: function() {
 			new LayoutView({
-				el: $('.container')
+				el: $('body')
 			});
 		}
 	};

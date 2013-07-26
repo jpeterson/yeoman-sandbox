@@ -23,14 +23,14 @@ require.config({
         underscore: 'underscore-amd/underscore',
         backbone: 'backbone-amd/backbone',
         bootstrap: '../scripts/vendor/bootstrap',
-        /* THESE are implied given the baseUrl
+        // THESE are implied given the baseUrl
         dojo: 'dojo',
         dijit: 'dijit',
         dojox: 'dojox',
         dgrid: 'dgrid',
         xstyle: 'xstyle',
         'put-selector': 'put-selector',
-        */
+
         esri: '//js.arcgis.com/3.6amd/js/esri',
         app: '../scripts/myApp'
     }
